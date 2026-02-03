@@ -6,15 +6,12 @@ This project implements a lexical analyzer that scans source code and converts i
 #include <cctype>
 #include <string>
 #include <unordered_set>
-
 using namespace std;
-
 // List of keywords
 unordered_set<string> keywords = {
     "int", "float", "double", "char", "if", "else",
     "for", "while", "return", "void"
 };
-
 bool isKeyword(const string& str) {
     return keywords.find(str) != keywords.end();
 }
